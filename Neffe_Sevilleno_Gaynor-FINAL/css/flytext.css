@@ -1,0 +1,58 @@
+            .text-vcenter {         
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+                color: white;
+                font-size: 30px;
+                width: 100px;
+                height: 100px;
+            }
+
+            
+            /*CSS FOR ANIMATED TEXT*/
+            #home p{
+                color: white;
+                font-family: 'Roboto', sans-serif;
+                text-transform: uppercase;
+                position: relative;
+                left: 0%;
+                top: 300%;
+                width: 100%;
+                height: 100%;
+                letter-spacing: 30px;
+                text-shadow: 2px 2px #000000;
+            }
+            .fly-in-text {
+                width: 100%;
+                height: 100%;
+                list-style: none;
+                position: absolute;
+                left: 50%;
+                top: 90%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+            .fly-in-text li {
+                display: inline-block;
+                margin-right: 60px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+                font-size: 2em;
+                color: #fff;
+                opacity: 1;
+                transition: all 2.5s ease;
+                text-shadow: 2px 2px #000000;
+            }
+            .fly-in-text li:last-child {
+                margin-right: 0;
+            }
+            .fly-in-text.texthidden li {
+                opacity: 0;
+            }
+            .fly-in-text.texthidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
+            .fly-in-text.texthidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
+            .fly-in-text.texthidden li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
+            .fly-in-text.texthidden li:nth-child(4) { transform: translateX(10px) translateY(-200px); }
+            .fly-in-text.texthidden li:nth-child(5) { transform: translateX(-300px) translateY(200px); }
+            .fly-in-text.texthidden li:nth-child(6) { transform: translateX(20px) translateY(-20px); }
+            .fly-in-text.texthidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
+            .fly-in-text.texthidden li:nth-child(8) { transform: translateX(40px) translateY(-100px); }

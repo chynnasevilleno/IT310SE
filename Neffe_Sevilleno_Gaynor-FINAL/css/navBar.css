@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
+
+
+.dropdown-menu:li {
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; 
+}
+
+.navbar-default{
+	background:transparent;
+  border:none;
+}
+/*.webnav .navbar-header{
+  background-color:#000000;
+  opacity: 0.6;
+}*/
+.navbar-nav>li>a:hover{
+	background:transparent;
+    color:#1a1a1a;
+} 
+.collapse.in{
+    /*background-color:#ffffff;*/
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus
+.spacer{
+   background-color:#88888;   
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+
+}
+.dropdown-menu{
+  display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+.spacer{
+    height:50px;
+}
+ .navbar .navbar-inner {
+   background: rgba(0,0,0,0.4);
+   opacity: 0.6;
+}
+
+.webnav nav ul li a {
+  position:relative;
+  z-index: 1;
+}
+.webnav nav ul li a:hover {
+  color: #3498db;
+}
+.webnav nav ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #2980b9;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+.webnav nav ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+.webnav nav {
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 10px 0;
+}
+.webnav nav ul {
+  list-style: none;
+  text-align: center;
+}
+.webnav nav ul li {
+  display: inline-block;
+}
+.webnav nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+.webnav nav ul li a,
+.webnav nav ul li a:after,
+.webnav nav ul li a:before {
+  transition: all .5s;
+}
+.webnav nav ul li a:hover {
+  color: #555;
+}
+
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
+
+/* Keyframes */
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: #eee;
+    border-radius: 100%;
+  }
+  100% {
+    background: #aaa;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}

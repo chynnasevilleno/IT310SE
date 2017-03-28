@@ -1,0 +1,481 @@
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="css/animations.css" />
+	<link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Passion+One|Roboto+Slab" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+  	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+	<style>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,800|Roboto+Slab" rel="stylesheet">
+		@import url('https://fonts.googleapis.com/css?family=Passion+One|Roboto+Slab');
+		body{
+			max-width: 900px;
+		}
+
+		#wrapper {width: 100%; height:100vh; position:relative; margin: 0 0 0 0; }
+		body{margin: 0 0 0 0;}
+		.float {background: -webkit-linear-gradient(180deg, rgb(80, 207, 214), rgb(193, 209, 174));background: linear-gradient(180deg, rgb(80, 207, 214), rgb(193, 209, 174)) no-repeat fixed; height:100vh; margin:0; padding:0; color:white; }
+		.left {position:fixed; width:50%; }
+		.right {float:right; width:50%; overflow-y: scroll;overflow-x: hidden;}
+		#wrapper h1{
+			position: absolute;
+			bottom: 30px;
+			right: 0;
+			font-size: 13vh;
+			text-align: right;
+			padding-right: 60px;
+			padding-left: 40px;
+			font-family: 'Open Sans', sans-serif;
+			letter-spacing: 0.1em;
+		}
+		#wrapper h3{
+			position: relative;
+			left:0;
+			font-size: 2vh;
+			text-align: left;
+			font-family: 'Open Sans Condensed', sans-serif;
+			opacity: 3%;
+			background: #f9f4e8;
+		    color: #002041;
+		    display: inline-block;
+		    font-weight: 300;
+		    padding: 7px 7px 5px 7px;
+		    margin-left: -7px;
+		}
+		.js-reveal {
+		  opacity: 1;
+		  transition: opacity .7s ease-in, margin-top .7s ease-out;
+		}
+
+		.js-reveal--hidden {
+		  opacity: 0;
+		  margin-top: 3em;
+		}
+		h2{
+			clear: none;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 50px;
+			margin-top: 250px;
+			margin-right: 80px;
+			margin-left: 80px;
+			display: inline-block;
+		    outline: 1px solid white;
+		    padding: 1em;
+		}
+		p{
+			font-size: 1.3em;  
+			
+		}
+		.toshow{
+			display:none;
+		}
+		#backbutt{
+			font-family: 'Roboto Slab', serif !important ;
+		}
+		.link{
+			font-size: 2em;
+			font-weight: 300;
+			cursor: pointer;
+			display: inline-block;
+			position: relative;
+			margin-bottom: 0.5em;
+			color: white;
+			text-transform: uppercase;
+			letter-spacing: 1;
+		}
+		.link i:hover
+		{
+			color:#eee6d2;
+			transition: all 0.5s ease;
+		}
+		.link.anim-lefttoright:after {
+			content: '';
+			display: block;
+			width: 0;
+			height: 3px;
+			background: #24077c;
+			transition: all .5s ease;
+		}
+		.link.anim-lefttoright:hover:after {
+			width: 100%;
+		}
+
+
+		.rolldown-list {
+		  text-align: left;
+		  padding: 0 40px 0 70px;
+		  margin: 0;
+		  color: black;
+		}
+		.rolldown-list li {
+		  padding: 2em;
+		  margin-bottom: .125em;
+		  display: block;
+		  list-style: none;
+		  font-family: 'Roboto', sans-serif;
+		}
+		.rolldown-list li:nth-child(2n) {
+		  background-color: #fff;
+		}
+		.rolldown-list li:nth-child(2n+1) {
+		  background-color: #f7f7f7
+		}
+		.topic{
+			margin: 0 30px 0 30px;
+		}
+		.headTopic{
+			font-size: 40px; padding: 0 50px 20px 50px; color: white; font-family: 'Passion One', cursive;
+		}
+		.desc{
+			font-weight: bold; font-size: 30px;
+		}
+	</style>
+	</head>
+	<body>
+		<div id="wrapper">
+		    <div class="float left"><!-- Everything in the left side of page-->
+		    <div id="backbutt" style="margin: 20px;"><a class="link anim-lefttoright" href="neffe_sevilleno_gaynor.html#timeline-of-jobs"><i class="fa fa-angle-double-left" aria-hidden="true" style="padding: 20px;"> <b style="font-family: 'Roboto Slab', serif;">back</b></i></a></div>
+		    <h1 class="text" data-aos="fade-right" aos-duration="2000">SOFTWARE<br/><span style="font: italic 32px 'Lora', Georgia, serif;text-transform: none; letter-spacing: 0"></span> TESTING<br/>OVERVIEW</h1></div><!-- End of left--> 
+
+		    <!-- Everything in the right side-->
+		    <div class="float right">
+		     <div style="margin: -200px 0 0 60px;"><h2 class="text hatch" style="margin-left: 10px;padding: 20px; text-align: center;" data-aos="fade-left" aos-duration="2000">WHAT IS SOFTWARE TESTING?</h2></div> <!-- MAIN HEADING -->
+		    <div class="toshow" style=" margin:0 0 0 10px;"><h3 style="padding: 20px 20px 20px 20px;margin: 40px;">
+		    Software Testing is evaluation of the software against requirements gathered from users and system specifications. Testing is conducted at the phase level in software development life cycle or at module level in program code. Software testing comprises of Validation and Verification.
+	
+		    </h3>
+		    </div> <!-- has fadeIn effect. ito ang description -->
+
+		    <div style="margin: -200px 0 0 60px;"><h2 class="text hatch" style="margin-left: 10px; padding: 20px;">Software Validation</h2></div>
+		    <div class="toshow" style=" margin:0 0 0 10px;"><h3 style="padding: 20px 20px 20px 20px;margin: 40px;"><div>
+		    Validation is process of examining whether or not the software satisfies the user requirements. It is carried out at the end of the SDLC. If the software matches requirements for which it was made, it is validated.
+		    <ul>
+		    	<li>Validation ensures the product under development is as per the user requirements.</li>
+		    	<li>Validation answers the question – "Are we developing the product which attempts all that user needs from this software ?".</li>
+		    	<li>Validation emphasizes on user requirements.</li>
+		    </ul>
+		    </h3>
+		    </div> <!-- has fadeIn effect. ito ang description -->
+		    <img src="../Neffe_Sevilleno_Gaynor-FINAL/images/anal.jpg" style="height: 250px; width: auto; padding-left: 25%;"/>
+
+		        <div style="margin: -200px 0 0 60px;"><h2 class="text hatch" style="margin-left: 10px; padding: 20px;">Software Verification</h2></div>
+		    <div class="toshow" style=" margin:0 0 0 10px;"><h3 style="padding: 20px 20px 20px 20px;margin: 40px;"><div>
+		    Verification is the process of confirming if the software is meeting the business requirements, and is developed adhering to the proper specifications and methodologies.
+		    <ul>
+		    	<li>Verification ensures the product being developed is according to design specifications.</li>
+		    	<li>Verification answers the question– "Are we developing this product by firmly following all design specifications ?"</li>
+		    	<li>Verifications concentrates on the design and system specifications.</li>
+		   </ul> 	
+		    
+		    Target of the test are:
+		    
+		    </h3>
+		    </div> <!-- has fadeIn effect. ito ang description -->
+		    <div style="font-family: 'Roboto', sans-serif; margin: 0 0 0 70px; padding-left: 40px; padding-right: 40px;"><span class="desc">Errors</span><p>These are actual coding mistakes made by developers. In addition, there is a difference in output of software and desired output, is considered as an error.</p>
+
+		      <span class="desc">Fault</span><p>When error exists fault occurs. A fault, also known as a bug, is a result of an error which can cause system to fail.</p>
+
+		    <span class="desc">Failure</span><p>failure is said to be the inability of the system to perform the desired task. Failure occurs when fault exists in the system.</p>
+		    </div>
+
+
+		        <div style="margin: -200px 0 0 60px;"><h2 class="text hatch" style="margin-left: 10px; padding: 20px; text-align: center;">Manual Vs Automated Testing</h2></div>
+		    <div class="toshow" style=" margin:0 0 0 10px;"><h3 style="padding: 20px 20px 20px 20px;margin: 40px;"><div>
+
+		    Testing can either be done manually or using an automated testing tool:
+		    
+		    <ul>
+		    	<li><b>Manual</b></li>
+		    	<br>
+		    	his testing is performed without taking help of automated testing tools. The software tester prepares test cases for different sections and levels of the code, executes the tests and reports the result to the manager.
+		    	<br><br>
+		    	Manual testing is time and resource consuming. The tester needs to confirm whether or not right test cases are used. Major portion of testing involves manual testing.
+		    	<br><br>
+		    	<li><b>Automated</b></li>
+		    	<br>
+		    	This testing is a testing procedure done with aid of automated testing tools. The limitations with manual testing can be overcome using automated test tools.
+		    	<br><br>
+		    	A test needs to check if a webpage can be opened in Internet Explorer. This can be easily done with manual testing. But to check if the web-server can take the load of 1 million users, it is quite impossible to test manually.
+		    	<br><br>
+		    	There are software and hardware tools which helps tester in conducting load testing, stress testing, regression testing.
+		    </ul>
+		    
+		    
+		    </h3>
+		    </div> <!-- has fadeIn effect. ito ang description -->
+
+		     <div style="margin: -200px 0 0 60px;"><h2 class="text hatch" style="margin-left: 10px; padding: 20px;">Testing Approaches</h2></div>
+		    <div class="toshow" style=" margin:0 0 0 10px;"><h3 style="padding: 20px 20px 20px 20px;margin: 40px;"><div>
+		   Tests can be conducted based on two approaches:
+		    <ul>
+		    	<li>Functionality testing</li>
+		    	<li>Implementation testing</li>
+		    </ul>
+		    When functionality is being tested without taking the actual implementation in concern it is known as black-box testing. The other side is known as white-box testing where not only functionality is tested but the way it is implemented is also analyzed.
+		    <br><br> 	
+		    
+		    Exhaustive tests are the best-desired method for a perfect testing. Every single possible value in the range of the input and output values is tested. It is not possible to test each and every value in real world scenario if the range of values is large.
+		    
+		    </h3>
+		    </div> <!-- has fadeIn effect. ito ang description -->
+
+
+		  
+		    
+
+		      <div style="font-family: 'Roboto', sans-serif; margin: 0 0 0 70px; padding-left: 40px; padding-right: 40px;"><span class="desc">Black-box testing</span>
+		     <p>
+		     It is carried out to test functionality of the program. It is also called ‘Behavioral’ testing. The tester in this case, has a set of input values and respective desired results. On providing input, if the output matches with the desired results, the program is tested ‘ok’, and problematic otherwise.
+		     </p>
+
+		     <img src="images/SysTest1.png">
+
+		     <p>In this testing method, the design and structure of the code are not known to the tester, and testing engineers and end users conduct this test on the software.</p>
+
+		     <p>The below are some Black-box testing techniques:</p>
+
+		     
+		     	<ul>
+		     		<li><b>Equivalence class</b></li>
+		     		<br>
+					The input is divided into similar classes. If one element of a class passes the test, it is assumed that all the class is passed.
+					<br><br>
+		     		<li><b>Boundary values</b></li>
+		     		<br>
+		     		The input is divided into higher and lower end values. If these values pass the test, it is assumed that all values in between may pass too.	
+		     		<br><br>
+
+		     		<li><b>Cause-effect graphing</b></li>
+		     		<br>
+		     		In both previous methods, only one input value at a time is tested. Cause (input) – Effect (output) is a testing technique where combinations of input values are tested in a systematic way.
+		     		<br><br>
+
+		     		<li><b>Pair-wise Testing</b></li>
+		     		<br>
+		     		The behavior of software depends on multiple parameters. In pairwise testing, the multiple parameters are tested pair-wise for their different values.
+		     		<br><br>
+
+		     		<li><b>State-based testing</b></li>
+		     		<br>
+		     		The system changes state on provision of input. These systems are tested based on their states and input.
+		     		
+		     	</ul>
+		     
+		    </div>
+
+
+		     <div style="font-family: 'Roboto', sans-serif; margin: 0 0 0 70px; padding-left: 40px; padding-right: 40px;"><span class="desc">White-box testing</span>
+		     <p>
+		     It is conducted to test program and its implementation, in order to improve code efficiency or structure. It is also known as ‘Structural’ testing.
+		     </p>
+
+		     <img src="images/SysTest2.png">
+
+		     <p>In this testing method, the design and structure of the code are known to the tester. Programmers of the code conduct this test on the code.</p>
+
+		     <p>The below are some White-box testing techniques:</p>
+
+		     
+		     	<ul>
+		     		<li><b>Control-flow testing</b></li>
+		     		<br>
+					The purpose of the control-flow testing to set up test cases which covers all statements and branch conditions. The branch conditions are tested for both being true and false, so that all statements can be covered.
+					<br><br>
+		     		
+		     		<li><b>Data-flow testing</b></li>
+		     		<br>
+		     		This testing technique emphasis to cover all the data variables included in the program. It tests where the variables were declared and defined and where they were used or changed.	
+		     		
+		     	</ul>
+		     
+		    </div>
+
+
+		     <div style="margin: -200px 0 0 60px;"><h2 class="text hatch" style="margin-left: 10px; padding: 20px;">Testing Levels</h2></div>
+		    <div class="toshow" style=" margin:0 0 0 10px;"><h3 style="padding: 20px 20px 20px 20px;margin: 40px;"><div>
+		   Testing itself may be defined at various levels of SDLC. The testing process runs parallel to software development. Before jumping on the next stage, a stage is tested, validated and verified.
+		    <br><br>
+		   Testing separately is done just to make sure that there are no hidden bugs or issues left in the software. Software is tested on various levels:
+		    
+		    </h3>
+		    </div> <!-- has fadeIn effect. ito ang description -->
+
+
+
+		      <div style="font-family: 'Roboto', sans-serif; margin: 0 0 0 70px; padding-left: 40px; padding-right: 40px;">
+
+		      <span class="desc">Unit Testing</span><p>While coding, the programmer performs some tests on that unit of program to know if it is error free. Testing is performed under white-box testing approach. Unit testing helps developers decide that individual units of the program are working as per requirement and are error free.</p>
+
+		     <span class="desc">Integration Testing</span><p>Even if the units of software are working fine individually, there is a need to find out if the units if integrated together would also work without errors. For example, argument passing and data updation etc.</p>
+		    
+		    <span class="desc">System Testing</span><p>The software is compiled as product and then it is tested as a whole. This can be accomplished using one or more of the following tests:</p>
+
+		    <ul>
+		    	<li><b>Functionality testing</b></li>
+		    	<br>
+		    	Tests all functionalities of the software against the requirement.
+		    	<br><br>
+		    	<li><b>Performance testing</b></li>
+		    	<br>
+		    	This test proves how efficient the software is. It tests the effectiveness and average time taken by the software to do desired task. Performance testing is done by means of load testing and stress testing where the software is put under high user and data load under various environment conditions.
+		    	<br><br>
+		    	<li><b>Security and Portability</b></li>
+		    	<br>
+		    	These tests are done when the software is meant to work on various platforms and accessed by number of persons.
+		    </ul>
+
+		    <span class="desc">Acceptance Testing</span><p>When the software is ready to hand over to the customer it has to go through last phase of testing where it is tested for user-interaction and response. This is important because even if the software matches all user requirements and if user does not like the way it appears or works, it may be rejected.</p>
+
+		    <ul>
+		    	<li><b>Alpha testing</b></li>
+		    	<br>
+		    	The team of developer themselves perform alpha testing by using the system as if it is being used in work environment. They try to find out how user would react to some action in software and how the system should respond to inputs.
+		    	<br><br>
+		    	<li><b>Beta testing</b></li>
+		    	<br>
+		    	After the software is tested internally, it is handed over to the users to use it under their production environment only for testing purpose. This is not as yet the delivered product. Developers expect that users at this stage will bring minute problems, which were skipped to attend.
+		    	
+		    </ul>
+
+
+		    <span class="desc">Regression Testing</span><p>Whenever a software product is updated with new code, feature or functionality, it is tested thoroughly to detect if there is any negative impact of the added code. This is known as regression testing.</p>
+		   
+		    </div>
+
+		    <div style="margin: -200px 0 0 60px;"><h2 class="text hatch" style="margin-left: 10px; padding: 20px;">Testing Documentation</h2></div>
+
+		    <div class="toshow" style=" margin:0 0 0 10px;"><h3 style="padding: 20px 20px 20px 20px;margin: 40px;">
+		    
+		  Testing documents are prepared at different stages:
+		  <ul>
+		  	<li><b>Before Testing</b></li>
+		  	<br>
+		  	Testing starts with test cases generation. Following documents are needed for reference:
+		  	<br><br>
+		  		<ul>
+		  			<li><b>SRS document</b></li>
+		  			<br>
+		  			Functional Requirements document.
+		  			<br><br>
+		  			<li><b>Test Policy document</b></li>
+		  			<br>
+		  			This describes how far testing should take place before releasing the product.
+		  			<br><br>
+		  			<li><b>Test Strategy document</b></li>
+		  			<br>
+		  			This mentions detail aspects of test team, responsibility matrix and rights/responsibility of test manager and test engineer.
+		  			<br><br>
+		  			<li><b>Traceability Matrix document</b></li>
+		  			<br>
+		  			This is SDLC document, which is related to requirement gathering process. As new requirements come, they are added to this matrix. These matrices help testers know the source of requirement. They can be traced forward and backward.
+
+
+		  		</ul>
+		  		<br>
+		  	<li><b>While Being Tested</b></li>
+		  	<br>
+		  	The following documents may be required while testing is started and is being done:
+		  	<br><br>
+		  		<ul>
+		  			<li><b>Test Case document</b></li>
+		  			<br>
+		  			This document contains list of tests required to be conducted. It includes Unit test plan, Integration test plan, System test plan and Acceptance test plan.
+		  			<br><br>
+		  			<li><b>Test description</b></li>
+		  			<br>
+		  			This document is a detailed description of all test cases and procedures to execute them.
+		  			<br><br>
+		  			<li><b>Test case report</b></li>
+		  			<br>
+		  			This document contains test case report as a result of the test.
+		  			<br><br>
+		  			<li><b>Test logs</b></li>
+		  			<br>
+		  			This document contains test logs for every test case report.
+
+
+		  		</ul>
+		  		<br>
+		  	<li><b>After Testing</b></li>
+		  	<br>
+		  	The following documents may be generated after testing:
+		  	<br><br>
+		  		<ul>
+		  			<li><b>Test summary</b></li>
+		  			<br>
+		  			This test summary is collective analysis of all test reports and logs. It summarizes and concludes if the software is ready to be launched. The software is released under version control system if it is ready to launch.
+		  		</ul>
+
+		  </ul>
+	
+		    </h3>
+		    </div> <!-- has fadeIn effect. ito ang description -->
+
+		    
+
+
+
+
+
+		    <div style="font-family: 'Roboto', sans-serif; margin: 0 0 0 70px; padding-left: 40px; padding-right: 40px;">
+
+		    <span class="desc">Testing vs. Quality Control, Quality Assurance and Audit</span><p>
+		    	We need to understand that software testing is different from software quality assurance, software quality control and software auditing.
+		    </p>
+
+		 	<ul>
+		 		<li><b>Software quality assurance</b></li>
+		 		<br>
+		 		These are software development process monitoring means, by which it is assured that all the measures are taken as per the standards of organization. This monitoring is done to make sure that proper software development methods were followed.
+		 		<br><br>
+
+		 		<li><b>Software quality control</b></li>
+		 		<br>
+		 		This is a system to maintain the quality of software product. It may include functional and non-functional aspects of software product, which enhance the goodwill of the organization. This system makes sure that the customer is receiving quality product for their requirement and the product certified as ‘fit for use’.
+		 		<br><br>
+
+		 		<li><b>Software audit</b></li>
+		 		<br>
+		 		This is a review of procedure used by the organization to develop the software. A team of auditors, independent of development team examines the software process, procedure, requirements and other aspects of SDLC. The purpose of software audit is to check that software and its development process, both conform standards, rules and regulations.
+
+		 	</ul>
+
+		   
+		    </div>
+		    <br><br>
+
+
+
+	
+	<script>
+		$(window).scroll(function() {
+			$('h2.text').each(function(){
+			var imagePos = $(this).offset().top;
+
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+9000) {
+					$(this).addClass("slideUp");
+				}
+			});
+		});
+	</script>
+	
+	<script>
+	$(document).ready(function () {
+    $('div.toshow').fadeIn(2200);
+    // OR $('div.toshow').show(2200);
+    // OR $('div.toshow').slideDown("slow");
+	});
+	</script>
+	<script>
+    AOS.init({
+      duration: 1200
+    });
+     </script>
+	</body>
+</html>

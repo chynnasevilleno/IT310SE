@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Latest compiled and minified CSS (Bootsrap) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme (Bootstrap)-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title>SysAnal</title>
+
+    <link rel="stylesheet" type="text/css" href="css/navBar.css" />
+    <link rel="stylesheet" type="text/css" href="css/sysmaintenance.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <style>
+                                      
+                                      table, th, td {
+                                                    border: 1px solid black;
+                                                    border-collapse: collapse;
+                                                    }
+                                    </style>  
+                                        <table align="center">
+  </head>
+  <body>
+
+  <body>
+              <div class="webnav navbar transparent navbar-inverse navbar-fixed-top">
+                <nav class="navbar-inner">
+                  <div class="container">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+                        data-target=".navbar-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#"> Software Engineering </a>
+                    </div>
+                    <div class="collapse navbar-collapse ">
+                        <ul class="nav navbar pull-right">
+                          <li><a href="#">Home</a></li>
+                          <li class="dropdown"> <a href="#changeBG" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chapters <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                                <li> <a href="#"> What is a software engineer? </a></li>
+                                <li> <a href="#changeBG"> Qualities of a SE </a></li>
+                                <li> <a href="#timeline-of-jobs"> Creative Process of a Software Engineer </a></li>
+                                <li> <a href="#"> Famous Software Engineers </a></li>
+                              </ul></li>
+                          <li><a href="#Team">Team</a></li>
+                          <li><a href="#footer">Contact</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                   </nav>
+                </div>
+    source: https://www.tutorialspoint.com/software_engineering/software_analysis_design_tools.htm
+
+    <div class="jumbotron"><h1>Software Analysis and Design Tools</h1></div>
+    <hr>
+
+    <div>
+      
+        <p>Software analysis and design includes all activities, which help the transformation of requirement specification into implementation. Requirement specifications specify all functional and non-functional expectations from the software. These requirement specifications come in the shape of human readable and understandable documents, to which a computer has nothing to do.</p>
+
+        <p>Software analysis and design is the intermediate stage, which helps human-readable requirements to be transformed into actual code.</p>
+
+        <p>Let us see few analysis and design tools used by software designers:</p>
+
+    </div>
+
+        <div>
+          
+            <div><h2><b>Data Flow Diagram</b></h2></div>
+
+            <p>Data flow diagram is graphical representation of flow of data in an information system. It is capable of depicting incoming data flow, outgoing data flow and stored data. The DFD does not mention anything about how data flows through the system.</p>
+
+            <p>There is a prominent difference between DFD and Flowchart. The flowchart depicts flow of control in program modules. DFDs depict flow of data in the system at various levels. DFD does not contain any control or branch elements.</p>
+
+            <div><h3>Types of DFD</h3></div>
+
+            <p>Data Flow Diagrams are either Logical or Physical.</p>
+
+            <div>
+              
+                <ul>
+                  
+                    <li><h4><b>Logical DFD</b></h4>
+
+                        <p>
+                          
+                               This type of DFD concentrates on the system process, and flow of data in the system.For example in a Banking software system, how data is moved between different entities.
+
+                        </p>
+
+                    </li>
+
+                    <li><h4><b>Physical DFD</b></h4>
+
+                        <p>
+                          
+                            This type of DFD shows how the data flow is actually implemented in the system. It is more specific and close to the implementation.
+
+                        </p>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div><h3>DFD Components</h3></div>
+
+            <p>DFD can represent Source, destination, storage and flow of data using the following set of components -</p>
+
+            <div align="center"><img src="images/SysAnal1.png"></div>
+
+            <div>
+              
+                <ul>
+                  
+                    <li><h4><b>Entities</b></h4>
+
+                        <p>
+                          
+                             Entities are source and destination of information data. Entities are represented by a rectangles with their respective names.
+
+                        </p>
+
+                    </li>
+
+                     <li><h4><b>Process</b></h4>
+
+                        <p>
+                          
+                             Activities and action taken on the data are represented by Circle or Round-edged rectangles.
+
+                        </p>
+
+                    </li>
+
+                     <li><h4><b>Data Storage</b></h4>
+
+                        <p>
+                          
+                           There are two variants of data storage - it can either be represented as a rectangle with absence of both smaller sides or as an open-sided rectangle with only one side missing.
+
+                        </p>
+
+                    </li>
+
+                     <li><h4><b>Data Flow</b></h4>
+
+                        <p>
+                          
+                           Movement of data is shown by pointed arrows. Data movement is shown from the base of arrow as its source towards head of the arrow as destination.  
+
+                        </p>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div><h3>Levels of DFD</h3></div>
+
+            <div>
+              
+                <ul>
+                  
+                    <li><h4><b>Level 0</b></h4>
+
+                        <p>
+                          
+                            Highest abstraction level DFD is known as Level 0 DFD, which depicts the entire information system as one diagram concealing all the underlying details. Level 0 DFDs are also known as context level DFDs.
+
+                        </p>
+
+                    </li>
+
+                          <div align="center"><img src="images/SysAnal2.png"></div>
+
+                    <li><h4><b>Level 1</b></h4>
+
+                        <p>
+                          
+                            The Level 0 DFD is broken down into more specific, Level 1 DFD. Level 1 DFD depicts basic modules in the system and flow of data among various modules. Level 1 DFD also mentions basic processes and sources of information.
+
+                        </p>
+
+                    </li>
+                  
+                          <div align="center"><img src="images/SysAnal3.png"></div>
+
+                    <li><h4><b>Level 2</b></h4>
+
+                        <p>
+                          
+                            At this level, DFD shows how data flows inside the modules mentioned in Level 1.
+
+                        </p>
+
+                        <p>
+                          
+                            Higher level DFDs can be transformed into more specific lower level DFDs with deeper level of understanding unless the desired level of specification is achieved.
+
+                        </p>
+
+                    </li>
+
+                </ul>
+
+            </div>
+        
+        </div>
+
+        <div>
+        <div><h2><b>Structure Chart</b></h2></div>
+
+        <p>Structure chart is a chart derived from Data Flow Diagram. It represents the system in more detail than DFD. It breaks down the entire system into lowest functional modules, describes functions and sub-functions of each module of the system to a greater detail than DFD.</p>
+        
+        <p>Structure chart represents hierarchical structure of modules. At each layer a specific task is performed.</p>
+        
+        <p>Here are the symbols used in construction of structure charts -Here are the symbols used in construction of structure charts -</p>
+
+          <div>
+                
+                <ul>
+                      
+                      <li><h3><b>Module</b></h3>
+
+                          <p>
+                            
+                              It represents process or subroutine or task. A control module branches to more than one sub-module. Library Modules are re-usable and invokable from any module.
+
+                          </p>
+
+                      </li>
+                      <div align="center"><img src="images/SysAnal4.png"></div>
+                      <li><h3><b>Condition</b></h3>
+
+                          <p>
+                            
+                               It is represented by small diamond at the base of module. It depicts that control module can select any of sub-routine based on some condition.
+
+                          </p>
+
+                      </li>
+                      <div align="center"><img src="images/SysAnal5.png"></div>
+                      <li><h3><b>Jump</b></h3>
+
+                          <p>
+                            
+                              An arrow is shown pointing inside the module to depict that the control will jump in the middle of the sub-module.
+
+                          </p>
+
+                      </li>
+                    <div align="center"><img src="images/SysAnal6.png"></div>
+                      <li><h3><b>Loop</b></h3>
+
+                          <p>
+                            
+                              A curved arrow represents loop in the module. All sub-modules covered by loop repeat execution of module.
+
+                          </p>
+
+                     </li>
+                      <div align="center"><img src="images/SysAnal7.png"></div>
+                      <li><h3><b>Data flow</b></h3>
+
+                          <p>
+                            
+                              A directed arrow with empty circle at the end represents data flow.
+
+                          </p>
+
+                      </li>
+                      <div align="center"><img src="images/SysAnal8.png"></div>
+                      <li><h3><b>Control flow</b></h3>
+
+                          <p>
+                            
+                               A directed arrow with filled circle at the end represents control flow.
+
+                          </p>
+
+                      </li>
+                      <div align="center"><img src="images/SysAnal9.png"></div>
+                </ul>
+
+          </div>
+
+        </div>
+
+        <div>
+          
+          <div><h2><b>HIPO Diagram</b></h2></div>
+
+          <p>HIPO (Hierarchical Input Process Output) diagram is a combination of two organized method to analyze the system and provide the means of documentation. HIPO model was developed by IBM in year 1970.</p>
+
+          <p>HIPO diagram represents the hierarchy of modules in the software system. Analyst uses HIPO diagram in order to obtain high-level view of system functions. It decomposes functions into sub-functions in a hierarchical manner. It depicts the functions performed by system.</p>
+
+          <p>HIPO diagrams are good for documentation purpose. Their graphical representation makes it easier for designers and managers to get the pictorial idea of the system structure.</p>
+
+          <div align="center"><img src="images/SysAnal10.png"></div>
+
+          <p>In contrast to IPO (Input Process Output) diagram, which depicts the flow of control and data in a module, HIPO does not provide any information about data flow or control flow.</p>
+
+          <div align="center"><img src="images/SysAnal11.png"></div>
+
+          <div><h3>Example</h3></div>
+          <p>Both parts of HIPO diagram, Hierarchical presentation and IPO Chart are used for structure design of software program as well as documentation of the same.</p>
+
+
+
+        </div>
+
+          <div>
+        
+              <div><h2><b>Structured English</b></h2></div>
+
+              <p>Most programmers are unaware of the large picture of software so they only rely on what their managers tell them to do. It is the responsibility of higher software management to provide accurate information to the programmers to develop accurate yet fast code.</p>
+
+              <p>Other forms of methods, which use graphs or diagrams, may are sometimes interpreted differently by different people.</p>
+
+              <p>Hence, analysts and designers of the software come up with tools such as Structured English. It is nothing but the description of what is required to code and how to code it. Structured English helps the programmer to write error-free code.</p>
+
+              <p>Other form of methods, which use graphs or diagrams, may are sometimes interpreted differently by different people. Here, both Structured English and Pseudo-Code tries to mitigate that understanding gap.</p>
+
+              <p>Structured English is the It uses plain English words in structured programming paradigm. It is not the ultimate code but a kind of description what is required to code and how to code it. The following are some tokens of structured programming.</p>
+
+              
+
+              <div>
+                
+                  <pre class="prettyprint notranslate prettyprinted"><span class="pln">IF</span><span class="pun">-</span><span class="pln">THEN</span><span class="pun">-</span><span class="pln">ELSE</span><span class="pun">,</span><span class="pln"> <br>DO</span><span class="pun">-</span><span class="pln">WHILE</span><span class="pun">-</span><span class="pln">UNTIL</span></pre>
+
+              </div>
+
+              <p>Analyst uses the same variable and data name, which are stored in Data Dictionary, making it much simpler to write and understand the code.</p>
+
+              <div><h3>Example</h3></div>
+
+              <p>We take the same example of Customer Authentication in the online shopping environment. This procedure to authenticate customer can be written in Structured English as:</p>
+
+              <div>
+                
+                  <pre class="prettyprint notranslate prettyprinted"><span class="typ">Enter</span><span class="pln"> </span><span class="typ">Customer_Name</span><span class="pln">
+                  SEEK </span><span class="typ">Customer_Name</span><span class="pln"> </span><span class="kwd">in</span><span class="pln"> </span><span class="typ">Customer_Name_DB</span><span class="pln"> file
+                  IF </span><span class="typ">Customer_Name</span><span class="pln"> found THEN
+                  </span><span class="typ">Call</span><span class="pln"> procedure USER_PASSWORD_AUTHENTICATE</span><span class="pun">()</span><span class="pln">
+                  ELSE
+                  PRINT error message
+                  </span><span class="typ">Call</span><span class="pln"> procedure NEW_CUSTOMER_REQUEST</span><span class="pun">()</span><span class="pln">
+                  ENDIF</span></pre>
+
+              </div>
+
+              <p>The code written in Structured English is more like day-to-day spoken English. It can not be implemented directly as a code of software. Structured English is independent of programming language.</p>
+
+          </div>
+
+          <div>
+            
+              <div><h2><b>Pseudo-Code</b></h2></div>
+
+              <p>Pseudo code is written more close to programming language. It may be considered as augmented programming language, full of comments and descriptions.</p>
+
+              <p>Pseudo code is written more close to programming language. It may be considered as augmented programming language, full of comments and descriptions.</p>
+
+              <p>Pseudo code is written more close to programming language. It may be considered as augmented programming language, full of comments and descriptions.</p>
+
+              <div><h3>Example</h3></div>
+
+              <p>Program to print Fibonacci up to n numbers.</p>
+
+              <div>
+                
+                  <pre class="prettyprint notranslate prettyprinted"><span class="kwd">void</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> </span><span class="typ">Fibonacci</span><span class="pln">
+                  </span><span class="typ">Get</span><span class="pln"> value of n</span><span class="pun">;</span><span class="pln">
+                  </span><span class="typ">Set</span><span class="pln"> value of a to </span><span class="lit">1</span><span class="pun">;</span><span class="pln">
+                  </span><span class="typ">Set</span><span class="pln"> value of b to </span><span class="lit">1</span><span class="pun">;</span><span class="pln">
+                  </span><span class="typ">Initialize</span><span class="pln"> I to </span><span class="lit">0</span><span class="pln">
+                  </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="pln">i</span><span class="pun">=</span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">&lt;</span><span class="pln"> n</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span><span class="pln">
+                  </span><span class="pun">{</span><span class="pln">
+                  </span><span class="kwd">if</span><span class="pln"> a greater than b 
+                  </span><span class="pun">{</span><span class="pln">
+                  </span><span class="typ">Increase</span><span class="pln"> b </span><span class="kwd">by</span><span class="pln"> a</span><span class="pun">;</span><span class="pln">
+                  </span><span class="typ">Print</span><span class="pln"> b</span><span class="pun">;</span><span class="pln">
+                 </span><span class="pun">}</span><span class="pln"> 
+                  </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> b greater than a
+                  </span><span class="pun">{</span><span class="pln">
+                  increase a </span><span class="kwd">by</span><span class="pln"> b</span><span class="pun">;</span><span class="pln">
+                  </span><span class="kwd">print</span><span class="pln"> a</span><span class="pun">;</span><span class="pln">
+                  </span><span class="pun">}</span><span class="pln">
+                  </span><span class="pun">}</span></pre>
+
+              </div>
+
+          </div>
+
+          <div>
+            
+              <div><h2><b>Decision Tables</b></h2></div>
+
+              <p>A Decision table represents conditions and the respective actions to be taken to address them, in a structured tabular format.</p>
+
+              <p>A Decision table represents conditions and the respective actions to be taken to address them, in a structured tabular format.</p>
+
+              <div><h3>Creating Decision Table</h3></div>
+
+              <p>To create the decision table, the developer must follow basic four steps:</p>
+
+              <div>
+                
+                  <ul>
+                    
+                    <li>Identify all possible conditions to be addressed</li>
+
+                    <li>Identify all possible conditions to be addressed</li>
+
+                    <li>Create Maximum possible rules</li>
+
+                    <li>Create Maximum possible rules</li>
+                  
+                  </ul>
+
+              </div>
+
+              <p>Decision Tables should be verified by end-users and can lately be simplified by eliminating duplicate rules and actions.</p>
+
+              <div><h3>Example</h3></div>
+
+              <p>Let us take a simple example of day-to-day problem with our Internet connectivity. We begin by identifying all problems that can arise while starting the internet and their respective possible solutions.</p>
+
+              <p>We list all possible problems under column conditions and the prospective actions under column Actions.</p>
+
+              <div>
+                                 
+                        <tbody><tr>
+                        <th></th>
+                        <th>Conditions/Actions</th>
+                        <th colspan="8">Rules</th>
+                        </tr>
+                        <tr>
+                        <th rowspan="3" style="border-bottom:1px solid #999;">Conditions</th>
+                        <td>Shows Connected</td>
+                        <td>N</td>
+                        <td>N</td>
+                        <td>N</td>
+                        <td>N</td>
+                        <td>Y</td>
+                        <td>Y</td>
+                        <td>Y</td>
+                        <td>Y</td>
+                        </tr>
+                        <tr>
+                        <td>Ping is Working</td>
+                        <td>N</td>
+                        <td>N</td>
+                        <td>Y</td>
+                        <td>Y</td>
+                        <td>N</td>
+                        <td>N</td>
+                        <td>Y</td>
+                        <td>Y</td>
+                        </tr>
+                        <tr>
+                        <td style="border-bottom:1px solid #999;">Opens Website</td>
+                        <td style="border-bottom:1px solid #999;">Y</td>
+                        <td style="border-bottom:1px solid #999;">N</td>
+                        <td style="border-bottom:1px solid #999;">Y</td>
+                        <td style="border-bottom:1px solid #999;">N</td>
+                        <td style="border-bottom:1px solid #999;">Y</td>
+                        <td style="border-bottom:1px solid #999;">N</td>
+                        <td style="border-bottom:1px solid #999;">Y</td>
+                        <td style="border-bottom:1px solid #999;">N</td>
+                        </tr>
+                        <tr>
+                         <th rowspan="5">Actions</th>
+                        <td>Check network cable</td>
+                        <td>X</td>
+                        <td></td>
+                        <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                        </tr>
+                        <tr>
+                        <td>Check internet router</td>
+                        <td>X</td>
+                        <td></td>
+                      <td></td>
+                      <td></td>
+                        <td>X</td>
+                        <td>X</td>
+                      <td>X</td>
+                      <td></td>
+                        </tr>
+                        <tr>
+                        <td>Restart Web Browser</td>
+                        <td></td>
+                      <td></td>
+                        <td></td>
+                      <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>X</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td>Contact Service provider</td>
+                        <td></td>
+                        <td>X</td>
+                        <td>X</td>
+                       <td>X</td>
+                       <td>X</td>
+                       <td>X</td>
+                       <td>X</td>
+                         <td></td>
+                        </tr>
+                      <tr>
+                      <td>Do no action</td>
+                      <td></td>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td> </td>
+                      <td></td>
+                      <td> </td>
+                      <td></td>
+                      </tr>
+                      </tbody></table>
+
+              </div>
+
+              <p align="center"><u>Table : Decision Table – In-house Internet Troubleshooting</u></p>
+
+          </div>
+
+          <div>
+            
+          <div><h2><b>Entity-Relationship Model</b></h2></div>
+
+            <p>Entity-Relationship model is a type of database model based on the notion of real world entities and relationship among them. We can map real world scenario onto ER database model. ER Model creates a set of entities with their attributes, a set of constraints and relation among them.</p>
+
+            <p>ER Model is best used for the conceptual design of database. ER Model can be represented as follows :</p>
+
+            <div align="center"><img src="images/SysAnal12.png"></div>
+
+            <div>
+              <ul>
+                  <li><h3><b>Entity</b></h3>
+
+                    <p>
+                    An entity in ER Model is a real world being, which has some properties called attributes. Every attribute is defined by its corresponding set of values, called domain.
+                    </p>
+                    
+                    <p>
+                      For example, Consider a school database. Here, a student is an entity. Student has various attributes like name, id, age and class etc.
+                    </p>
+                  </li>
+
+                  <li><h3><b>Relationship</b></h3>
+
+                  <p>
+                      he logical association among entities is called relationship. Relationships are mapped with entities in various ways. Mapping cardinalities define the number of associations between two entities.
+
+                  </p>
+                  </li>
+
+
+
+              </ul>
+            </div>
+
+            <div><h4>Mapping cardinalities:</h4></div>
+
+            <div>
+              
+              <ul>
+                <li>one to one</li>
+                <li>one to many</li>
+                <li>many to one</li>
+                <li>many to many</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div>
+            
+            <div><h2><b>Data Dictionary</b></h2></div>
+
+              <p>Data dictionary is the centralized collection of information about data. It stores meaning and origin of data, its relationship with other data, data format for usage etc. Data dictionary has rigorous definitions of all names in order to facilitate user and software designers.</p>
+
+              <p>Data dictionary is often referenced as meta-data (data about data) repository. It is created along with DFD (Data Flow Diagram) model of software program and is expected to be updated whenever DFD is changed or updated.</p>
+
+              <div><h3>Requirement of Data Dictionary</h3></div>
+
+              <p>The data is referenced via data dictionary while designing and implementing software. Data dictionary removes any chances of ambiguity. It helps keeping work of programmers and designers synchronized while using same object reference everywhere in the program.</p>
+
+              <p>Data dictionary provides a way of documentation for the complete database system in one place. Validation of DFD is carried out using data dictionary.</p>
+
+              <div><h3>Contents</h3></div>
+
+              <p>Data dictionary should contain information about the following</p>
+
+              <div>
+                
+                  <ul>
+                    <li>Data Flow</li>
+                    <li>Data Structure</li>
+                    <li>Data Elements</li>
+                    <li>Data Stores</li>
+                    <li>Data Processing</li>
+                  </ul>
+              </div>
+
+              <p>Data Flow is described by means of DFDs as studied earlier and represented in algebraic form as described.</p>
+
+
+              <div>
+                                          <table class="src">
+                          <tbody><tr>
+                          <th>=</th>
+                          <th>Composed of</th>
+                          </tr>
+                          <tr>
+                          <td>{}</td>
+                          <td>Repetition</td>
+                          </tr>
+                          <tr>
+                          <td>()</td>
+                          <td>Optional</td>
+                          </tr>
+                          <tr>
+                          <td>+</td>
+                          <td>And</td>
+                          </tr>
+                          <tr>
+                          <td>[ / ]</td>
+                          <td>Or</td>
+                          </tr>
+                          </tbody></table>
+              </div>
+
+              <div><h3>Example</h3></div>
+
+              <p>Address = House No + (Street / Area) + City + State</p>
+
+              <p>Course ID = Course Number + Course Name + Course Level + Course Grades</p>
+
+              <div><h3>Data Elements</h3></div>
+
+              <p>Data elements consist of Name and descriptions of Data and Control Items, Internal or External data stores etc. with the following details:</p>
+
+              <div>
+                  
+                  <ul>
+                    
+                      <li>Primary Name</li>
+                      <li>Secondary Name (Alias)</li>
+                      <li>Use-case (How and where to use)</li>
+                      <li>Content Description (Notation etc. )</li>
+                      <li>Supplementary Information (preset values, constraints etc.)</li>
+
+                  </ul>
+
+              </div>
+
+              <div><h3>Data Store</h3></div>
+
+              <div>
+                
+                  <ul>
+                    <li><h4><b>Files</b></h4></li>
+                        <ul>
+                          <li>Internal to software.</li>
+                          <li>External to software but on the same machine.</li>
+                          <li>External to software and system, located on different machine</li>
+                        </ul>
+                     <li><h4><b>Tables</b></h4></li>
+                      <ul>
+                        <li>Naming convention</li>
+                        <li>Indexing property</li>
+
+                      </ul>
+                  </ul>
+
+              </div>
+
+              <div><h3>Data Processing</h3></div>
+              <p>There are two types of Data Processing:</p>
+
+              <div>
+                  <ul>
+                    
+                    <li><b>Logical:</b> As user sees it</li>
+                    <li><b>Physical: :</b> As software sees it</li>
+                  </ul>
+
+              </div>
+
+          </div>
+
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

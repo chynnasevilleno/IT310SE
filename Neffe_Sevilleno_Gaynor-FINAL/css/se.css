@@ -1,0 +1,106 @@
+/*FONTS */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Satisfy');
+/*////////////////*/
+
+.meet-the-se{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.head{
+  font-size: 5.8vw;
+  font-family: 'Oswald', sans-serif;
+  padding-top: 7%;
+  -webkit-transition: color 0.80s;
+  transition: 1.0s;
+  color: #3B3D42;
+  smin-width: 550px;
+}
+
+
+/*DEFINITION*/
+
+.des {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4vw;
+  color: #3B3D42;
+    animation:
+        slideUp 3s .5s cubic-bezier(0.17,.88,.32,1.27) both,
+        fadeIn .25s .5s ease-in both;
+    padding: 0 20px;
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    width: 70%;
+    margin: 0 auto;
+    left:0;
+    text-align: center;
+    right: 0;
+    smin-width: 550px;
+}
+
+@keyframes slideUp {
+    from {transform: translateY(200%);}
+    to {transform:translateY(-50%);}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+/* GENERAL MEDIA QUERIES –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 550px){
+  .head{
+    padding-top: 10%;
+    font-size: 9vw;
+    text-align: center;
+    right: 0;
+    padding-bottom: 5%;
+
+  }
+
+  .des{
+    top: 60%;
+    font-size: 3vw;
+    width: 500px;
+  }
+
+  @media screen and (max-width: 490px){
+  .head{
+    padding-top: 5%;
+    font-size: 9vw;
+    text-align: center;
+    right: 0;
+    padding-bottom: 5%;
+
+  }
+
+  .des{
+    top: 60%;
+    font-size: 3.5vw;
+    width: 450px;
+  }
+}
+
+  @media screen and (max-width: 440px){
+  .head{
+    padding-top: 5%;
+    font-size: 9vw;
+    text-align: center;
+    right: 0;
+    padding-bottom: 5%;
+
+  }
+
+  .des{
+    top: 60%;
+    font-size: 3vw;
+    width: 300px;
+  }
+
+  
